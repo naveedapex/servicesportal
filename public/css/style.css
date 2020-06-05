@@ -1,0 +1,344 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+@media(max-width: 600px) {
+    nav ul li {
+        min-width: 100%;
+        background: rgba(80, 13, 13, 0.7);
+    }
+    nav ul li:hover {
+        background: rgba(255, 255, 255, 0.7);
+    }
+    nav ul li a:hover {
+        border: none;
+    }
+}
+
+/*
+-------------------------------
+    NavBar STYLING START
+-------------------------------
+*/
+
+nav {
+    background: #868282;
+    border-bottom: 3px solid rgb(11, 36, 178);
+    height: 50px;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    line-height: 50px;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background: #555555;
+    color: #C182F9;
+    border-bottom: 4px solid white;
+}
+
+/*
+-------------------------------
+    NavBar STYLING END
+-------------------------------
+*/
+
+/*
+-------------------------------
+   PAGE TITLE STYLING START
+-------------------------------
+*/
+
+.page_title {
+    min-height: 35vh;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.page_title h1 {
+    color: white;
+    font-size: 2.4em;
+}
+
+/*
+-------------------------------
+   PAGE TITLE STYLING END
+-------------------------------
+*/
+
+/*
+-------------------------------
+  FOOTER SECTION STYLING START
+-------------------------------
+*/
+
+footer {
+    background-color: #8b8b8af1;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer .social_icons ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .social_icons ul li {
+    list-style: none;
+    padding: 5px;
+    margin: 10px;
+}
+
+footer .social_icons img {
+    width: 30px;
+    height: 30px;
+}
+
+footer .social_icons img:hover {
+    filter: hue-rotate(45deg);
+}
+
+/*
+-------------------------------
+  FOOTER SECTION STYLING END
+-------------------------------
+*/
+
+/*
+-------------------------------
+    HOME PAGE STYLING START
+-------------------------------
+*/
+
+#homeSection {
+    min-height: 100vh;
+    background: linear-gradient(90deg, rgba(121, 120, 120, 0.8), rgba(121, 120, 120, 0.8)), url('../img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#homeSection #homeContent {
+    margin-top: 35vh;
+    text-align: center;
+}
+
+#homeSection #homeContent h1 {
+    font-size: 2.5em;
+    color: rgb(255, 255, 255);
+    letter-spacing: 3px;
+}
+
+#homeSection #homeContent h1 span {
+    color: rgb(119, 0, 255);
+}
+
+#homeSection #homeContent p {
+    margin: 5px;
+    color: white;
+    font-size: 20px;
+}
+
+#homeSection #homeContent a {
+    padding: 10px 15px 10px 15px;
+    color: white;
+    outline: 2px solid #590BB2;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#homeSection #homeContent a:hover {
+    background: #590BB2;
+}
+
+/*
+-------------------------------
+    HOME PAGE STYLING END
+-------------------------------
+*/
+
+/*
+-------------------------------
+  SERVICES PAGE STYLING START
+-------------------------------
+*/
+
+.services_sec {
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.services_sec .service_box {
+    padding: 10px;
+    margin: 15px;
+    text-align: center;
+}
+
+.services_sec .service_box img {
+    width: 160px;
+    height: 160px;
+    padding: 10px;
+    border: 1px solid #590BB2;
+}
+
+.services_sec .service_box h3 {
+    background-color: #333333;
+    color: white;
+    padding: 10px;
+}
+
+/*
+-------------------------------
+   SERVICES PAGE STYLING END
+-------------------------------
+*/
+
+/*
+-------------------------------
+   ABOUT US PAGE STYLING START
+-------------------------------
+*/
+
+.about_us_sec {
+    width: 80vw;
+    margin: 0 auto;
+    height: auto;
+}
+
+.about_us_sec .container {
+    background: url('../img/about_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 10vh 0 10vh 0;
+    text-align: center;
+}
+
+.about_us_sec .container h2 {
+    border-radius: 5px 5px 0px 0px;
+    font-size: 2em;
+    color: white;
+    background: #590BB2;
+    padding: 10px;
+}
+
+.about_us_sec .container p {
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-size: 17px;
+    font-weight: thin;
+    word-spacing: 5px;
+    line-height: 30px;
+    color: white;
+    margin-top: 10vh;
+    padding: 10px;
+}
+
+.about_us_sec .container a {
+    padding: 10px 15px 10px 15px;
+    color: #590BB2;
+    border: 2px solid #590BB2;
+    text-decoration: none;
+    display: inline-block;
+    margin: 20px;
+}
+
+.about_us_sec .container a:hover {
+    background-color: #590BB2;
+    color: white;
+}
+
+/*
+-------------------------------
+   ABOUT US PAGE STYLING END
+-------------------------------
+*/
+
+.contact_sec {
+    margin: 30px;
+    background: url('../img/contact_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.contact_sec .wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.contact_sec h2 {
+    background: #590BB2;
+    color: white;
+    padding: 20px;
+}
+
+.contact_sec form input {
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+    height: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.contact_sec form input:focus, .contact_sec form textarea:focus {
+    outline: 2px solid #590BB2;
+}
+
+.contact_sec form textarea {
+    padding: 10px;
+    margin: 15px;
+    border-radius: 5px;
+    width: 80%;
+    height: 80px;
+}
+
+.contact_sec form button {
+    padding: 10px 15px 10px 15px;
+    width: 80%;
+    margin: 15px;
+    color: #590BB2;
+    background: none;
+    border: none;
+    outline: 2px solid #590BB2;
+    cursor: pointer;
+}
+
+.contact_sec form button:hover {
+    background: #590BB2;
+    color: white;
+}
